@@ -1,0 +1,387 @@
+{
+  "plugins": [
+    "react",
+    "import"
+  ],
+  "rules": {
+    "react/forbid-elements": [
+      "warn",
+      {
+        "forbid": []
+      }
+    ],
+    "no-restricted-imports": [
+      "warn",
+      {
+        "patterns": [
+          {
+            "group": [
+              "components/case/**",
+              "components/layout/**",
+              "components/media/**",
+              "components/type/**",
+              "ui_kits/portfolio/**"
+            ],
+            "message": "Import design-system components from 'index.js', not component internals."
+          }
+        ]
+      }
+    ],
+    "no-restricted-syntax": [
+      "warn",
+      {
+        "selector": "Literal[value=/#[0-9a-fA-F]{3,8}\\b/]",
+        "message": "Raw hex color — use a design-system color token via var()."
+      },
+      {
+        "selector": "Literal[value=/\\b\\d+px\\b/]",
+        "message": "Raw px value — use a design-system spacing token via var()."
+      },
+      {
+        "selector": "Literal[value=/font-family\\s*:\\s*(?!['\\\"]?(?:Archivo))/i]",
+        "message": "Font not provided by the design system. Available: Archivo."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='CaseStudyReel'] > JSXAttribute > JSXIdentifier[name!=/^(?:src|poster|caption|key|ref|className|style|children)$/]",
+        "message": "<CaseStudyReel> doesn't accept that prop. Declared props: src, poster, caption."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='ContactLink'] > JSXAttribute > JSXIdentifier[name!=/^(?:label|href|key|ref|className|style|children)$/]",
+        "message": "<ContactLink> doesn't accept that prop. Declared props: label, href."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='DisplayTitle'] > JSXAttribute > JSXIdentifier[name!=/^(?:children|size|as|tone|balance|key|ref|className|style|children)$/]",
+        "message": "<DisplayTitle> doesn't accept that prop. Declared props: children, size, as, tone, balance."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='DisplayTitle'] > JSXAttribute[name.name='tone'] > Literal[value!=/^(?:ink|on-media)$/]",
+        "message": "<DisplayTitle> tone must be one of 'ink' | 'on-media'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='IntroBlock'] > JSXAttribute > JSXIdentifier[name!=/^(?:name|discipline|statement|addressedTo|contact|key|ref|className|style|children)$/]",
+        "message": "<IntroBlock> doesn't accept that prop. Declared props: name, discipline, statement, addressedTo, contact."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Label'] > JSXAttribute > JSXIdentifier[name!=/^(?:children|tone|as|index|key|ref|className|style|children)$/]",
+        "message": "<Label> doesn't accept that prop. Declared props: children, tone, as, index."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Label'] > JSXAttribute[name.name='tone'] > Literal[value!=/^(?:quiet|ink|accent|on-media)$/]",
+        "message": "<Label> tone must be one of 'quiet' | 'ink' | 'accent' | 'on-media'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='MetaItem'] > JSXAttribute > JSXIdentifier[name!=/^(?:key|value|key|ref|className|style|children)$/]",
+        "message": "<MetaItem> doesn't accept that prop. Declared props: key, value."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Passage'] > JSXAttribute > JSXIdentifier[name!=/^(?:label|children|lead|key|ref|className|style|children)$/]",
+        "message": "<Passage> doesn't accept that prop. Declared props: label, children, lead."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Reel'] > JSXAttribute > JSXIdentifier[name!=/^(?:src|poster|caption|fit|full|key|ref|className|style|children)$/]",
+        "message": "<Reel> doesn't accept that prop. Declared props: src, poster, caption, fit, full."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Reel'] > JSXAttribute[name.name='fit'] > Literal[value!=/^(?:contain|cover)$/]",
+        "message": "<Reel> fit must be one of 'contain' | 'cover'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='ResultLine'] > JSXAttribute > JSXIdentifier[name!=/^(?:children|label|metric|key|ref|className|style|children)$/]",
+        "message": "<ResultLine> doesn't accept that prop. Declared props: children, label, metric."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Reveal'] > JSXAttribute > JSXIdentifier[name!=/^(?:children|delay|as|key|ref|className|style|children)$/]",
+        "message": "<Reveal> doesn't accept that prop. Declared props: children, delay, as."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Rule'] > JSXAttribute > JSXIdentifier[name!=/^(?:tone|key|ref|className|style|children)$/]",
+        "message": "<Rule> doesn't accept that prop. Declared props: tone."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Rule'] > JSXAttribute[name.name='tone'] > Literal[value!=/^(?:hairline|strong|accent|on-media)$/]",
+        "message": "<Rule> tone must be one of 'hairline' | 'strong' | 'accent' | 'on-media'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Section'] > JSXAttribute > JSXIdentifier[name!=/^(?:children|tone|bleed|tight|as|key|ref|className|style|children)$/]",
+        "message": "<Section> doesn't accept that prop. Declared props: children, tone, bleed, tight, as."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Section'] > JSXAttribute[name.name='tone'] > Literal[value!=/^(?:page|raised|media)$/]",
+        "message": "<Section> tone must be one of 'page' | 'raised' | 'media'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Still'] > JSXAttribute > JSXIdentifier[name!=/^(?:src|alt|caption|ratio|fit|key|ref|className|style|children)$/]",
+        "message": "<Still> doesn't accept that prop. Declared props: src, alt, caption, ratio, fit."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Still'] > JSXAttribute[name.name='ratio'] > Literal[value!=/^(?:still|reel|wide|square)$/]",
+        "message": "<Still> ratio must be one of 'still' | 'reel' | 'wide' | 'square'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Still'] > JSXAttribute[name.name='fit'] > Literal[value!=/^(?:cover|contain)$/]",
+        "message": "<Still> fit must be one of 'cover' | 'contain'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='StillStripItem'] > JSXAttribute > JSXIdentifier[name!=/^(?:src|alt|key|ref|className|style|children)$/]",
+        "message": "<StillStripItem> doesn't accept that prop. Declared props: src, alt."
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/index.js"
+      ],
+      "rules": {
+        "no-restricted-imports": "off"
+      }
+    }
+  ],
+  "x-omelette": {
+    "components": {
+      "CaseStudyReel": {
+        "replaces": []
+      },
+      "ContactLink": {
+        "replaces": []
+      },
+      "DisplayTitle": {
+        "replaces": []
+      },
+      "IntroBlock": {
+        "replaces": []
+      },
+      "Label": {
+        "replaces": []
+      },
+      "MetaItem": {
+        "replaces": []
+      },
+      "Passage": {
+        "replaces": []
+      },
+      "Reel": {
+        "replaces": []
+      },
+      "ResultLine": {
+        "replaces": []
+      },
+      "Reveal": {
+        "replaces": []
+      },
+      "Rule": {
+        "replaces": []
+      },
+      "Section": {
+        "replaces": []
+      },
+      "Still": {
+        "replaces": []
+      },
+      "StillStripItem": {
+        "replaces": []
+      }
+    },
+    "tokens": [
+      "--aspect-reel",
+      "--aspect-still",
+      "--aspect-wide",
+      "--border-hair",
+      "--brass-0",
+      "--brass-1",
+      "--brass-2",
+      "--brass-3",
+      "--content-max",
+      "--dur-base",
+      "--dur-fast",
+      "--dur-reveal",
+      "--ease-inout",
+      "--ease-out",
+      "--focus-ring",
+      "--font-core",
+      "--font-display",
+      "--font-mono",
+      "--fs-body",
+      "--fs-body-lg",
+      "--fs-display-1",
+      "--fs-display-2",
+      "--fs-display-3",
+      "--fs-label",
+      "--fs-lead",
+      "--fs-result",
+      "--fs-small",
+      "--fw-bold",
+      "--fw-light",
+      "--fw-medium",
+      "--fw-regular",
+      "--fw-semibold",
+      "--gutter",
+      "--hover-dim",
+      "--ink-0",
+      "--ink-1",
+      "--ink-2",
+      "--ink-3",
+      "--ink-4",
+      "--lh-body",
+      "--lh-display",
+      "--lh-display-loose",
+      "--lh-label",
+      "--lh-lead",
+      "--lh-result",
+      "--measure-body",
+      "--measure-lead",
+      "--measure-result",
+      "--media-scrim",
+      "--media-tint",
+      "--page-max",
+      "--paper-0",
+      "--paper-1",
+      "--paper-2",
+      "--radius-0",
+      "--radius-1",
+      "--radius-media",
+      "--reel-max-h",
+      "--reveal-shift",
+      "--reveal-stagger",
+      "--rule-hairline",
+      "--rule-on-media",
+      "--rule-strong",
+      "--s-1",
+      "--s-10",
+      "--s-11",
+      "--s-2",
+      "--s-3",
+      "--s-4",
+      "--s-5",
+      "--s-6",
+      "--s-7",
+      "--s-8",
+      "--s-9",
+      "--section-y",
+      "--stack",
+      "--stack-loose",
+      "--stack-tight",
+      "--surface-media",
+      "--surface-page",
+      "--surface-raised",
+      "--surface-sunken",
+      "--text-accent",
+      "--text-accent-strong",
+      "--text-body",
+      "--text-display",
+      "--text-label",
+      "--text-on-media",
+      "--text-quiet",
+      "--tr-body",
+      "--tr-display",
+      "--tr-display-2",
+      "--tr-label",
+      "--tr-result",
+      "--void",
+      "--wdth-display",
+      "--wdth-label"
+    ],
+    "tokenKinds": {
+      "--font-core": "font",
+      "--font-display": "font",
+      "--font-mono": "font",
+      "--paper-0": "color",
+      "--paper-1": "color",
+      "--paper-2": "color",
+      "--ink-0": "color",
+      "--ink-1": "color",
+      "--ink-2": "color",
+      "--ink-3": "color",
+      "--ink-4": "color",
+      "--brass-0": "color",
+      "--brass-1": "color",
+      "--brass-2": "color",
+      "--brass-3": "color",
+      "--void": "color",
+      "--surface-page": "color",
+      "--surface-raised": "color",
+      "--surface-sunken": "color",
+      "--surface-media": "color",
+      "--text-display": "font",
+      "--text-body": "font",
+      "--text-quiet": "font",
+      "--text-label": "font",
+      "--text-on-media": "font",
+      "--text-accent": "font",
+      "--text-accent-strong": "font",
+      "--rule-hairline": "color",
+      "--rule-strong": "color",
+      "--rule-on-media": "color",
+      "--focus-ring": "color",
+      "--fs-display-1": "font",
+      "--fs-display-2": "font",
+      "--fs-display-3": "font",
+      "--fs-result": "font",
+      "--fs-lead": "font",
+      "--fs-body": "font",
+      "--fs-body-lg": "font",
+      "--fs-small": "font",
+      "--fs-label": "font",
+      "--fw-light": "font",
+      "--fw-regular": "font",
+      "--fw-medium": "font",
+      "--fw-semibold": "font",
+      "--fw-bold": "font",
+      "--lh-display": "font",
+      "--lh-display-loose": "font",
+      "--lh-result": "font",
+      "--lh-lead": "font",
+      "--lh-body": "font",
+      "--lh-label": "font",
+      "--tr-display": "font",
+      "--tr-display-2": "font",
+      "--tr-result": "font",
+      "--tr-body": "font",
+      "--tr-label": "font",
+      "--wdth-display": "font",
+      "--wdth-label": "font",
+      "--measure-body": "other",
+      "--measure-lead": "other",
+      "--measure-result": "other",
+      "--s-1": "spacing",
+      "--s-2": "spacing",
+      "--s-3": "spacing",
+      "--s-4": "spacing",
+      "--s-5": "spacing",
+      "--s-6": "spacing",
+      "--s-7": "spacing",
+      "--s-8": "spacing",
+      "--s-9": "spacing",
+      "--s-10": "spacing",
+      "--s-11": "spacing",
+      "--gutter": "spacing",
+      "--stack-tight": "color",
+      "--stack": "color",
+      "--stack-loose": "color",
+      "--section-y": "spacing",
+      "--content-max": "spacing",
+      "--page-max": "spacing",
+      "--radius-0": "radius",
+      "--radius-1": "radius",
+      "--radius-media": "radius",
+      "--border-hair": "spacing",
+      "--ease-out": "other",
+      "--ease-inout": "other",
+      "--dur-fast": "other",
+      "--dur-base": "other",
+      "--dur-reveal": "other",
+      "--reveal-shift": "spacing",
+      "--reveal-stagger": "other",
+      "--hover-dim": "other",
+      "--aspect-reel": "other",
+      "--aspect-still": "other",
+      "--aspect-wide": "other",
+      "--reel-max-h": "spacing",
+      "--media-scrim": "other",
+      "--media-tint": "other"
+    },
+    "fontFamilies": [
+      "Archivo"
+    ]
+  }
+}
