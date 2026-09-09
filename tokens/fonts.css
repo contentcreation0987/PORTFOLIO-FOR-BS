@@ -1,0 +1,7 @@
+/* Archivo (Google Fonts) — grotesque, variable weight + width.
+   SUBSTITUTION: no font binaries were supplied with the source material.
+   Archivo is the nearest grotesque match to the requested register
+   (tight, very large, editorial-neutral). Swap the @font-face src below
+   for licensed binaries when available. */
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,75..125,100..900;1,75..125,100..900&display=swap");
+:root{--font-core:"Archivo","Helvetica Neue",Helvetica,sans-serif;--font-display:"Archivo","Helvetica Neue",Helvetica,sans-serif;--font-mono:ui-monospace,"SFMono-Regular",Menlo,monospace}

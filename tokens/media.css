@@ -1,0 +1,9 @@
+:root{
+/* 9:16 reel is the hero format. */
+--aspect-reel:9/16; /* @kind other */
+--aspect-still:4/5; /* @kind other */
+--aspect-wide:3/2; /* @kind other */
+--reel-max-h:min(86svh,900px); /* @kind spacing */
+--media-scrim:linear-gradient(to top,rgba(10,9,8,.72) 0%,rgba(10,9,8,.28) 34%,rgba(10,9,8,0) 62%); /* @kind other */
+--media-tint:none /* @kind other */
+}

@@ -1,0 +1,16 @@
+:root{
+/* Motion budget: fades and simple reveals only. No parallax, no scrolljacking. */
+--ease-out:cubic-bezier(.22,.61,.36,1); /* @kind other */
+--ease-inout:cubic-bezier(.4,0,.2,1); /* @kind other */
+--dur-fast:140ms; /* @kind other */
+--dur-base:260ms; /* @kind other */
+--dur-reveal:640ms; /* @kind other */
+--reveal-shift:14px; /* @kind spacing */
+--reveal-stagger:80ms; /* @kind other */ 
+--hover-dim:.62 /* @kind other */
+}
+@media (prefers-reduced-motion:reduce){:root{
+--dur-reveal:1ms; /* @kind other */
+--reveal-shift:0px; /* @kind spacing */
+--reveal-stagger:0ms /* @kind other */
+}}

@@ -1,0 +1,15 @@
+:root{
+/* Base ink + paper. Warm paper, near-black ink. Never pure #000/#fff. */
+--paper-0:#FAF8F5;--paper-1:#F2EFEA;--paper-2:#E7E3DC;
+--ink-0:#0E0D0B;--ink-1:#2A2823;--ink-2:#5C574E;--ink-3:#8E887D;--ink-4:#BFB9AE;
+/* The one accent: brass/ochre. Used for the result line and nothing else by default. */
+--brass-0:#7C4A05;--brass-1:#A16207;--brass-2:#C88A24;--brass-3:#F0E4CE;
+/* Inverse ground for full-bleed media sections */
+--void:#0A0908;
+/* Semantic aliases — prefer these in components */
+--surface-page:var(--paper-0);--surface-raised:var(--paper-1);--surface-sunken:var(--paper-2);--surface-media:var(--void);
+--text-display:var(--ink-0);--text-body:var(--ink-1);--text-quiet:var(--ink-2);--text-label:var(--ink-3);--text-on-media:var(--paper-0);
+--text-accent:var(--brass-1);--text-accent-strong:var(--brass-0);
+--rule-hairline:rgba(14,13,11,.14);--rule-strong:rgba(14,13,11,.34);--rule-on-media:rgba(250,248,245,.22);
+--focus-ring:var(--brass-1)
+}

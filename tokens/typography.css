@@ -1,0 +1,38 @@
+:root{
+/* Fluid display scale. Case-study titles are oversized and clamp to viewport. */
+--fs-display-1:clamp(3.25rem,15.5vw,10rem); /* @kind font */
+--fs-display-2:clamp(2.5rem,11vw,6.5rem); /* @kind font */
+--fs-display-3:clamp(1.75rem,7vw,3.5rem); /* @kind font */
+--fs-result:clamp(1.375rem,4.6vw,2.25rem); /* @kind font */
+--fs-lead:clamp(1.0625rem,2.6vw,1.375rem); /* @kind font */
+--fs-body:0.9375rem; /* @kind font */
+--fs-body-lg:1rem; /* @kind font */
+--fs-small:0.8125rem; /* @kind font */
+--fs-label:0.6875rem; /* @kind font */
+/* Weights */
+--fw-light:300; /* @kind font */
+--fw-regular:400; /* @kind font */
+--fw-medium:500; /* @kind font */
+--fw-semibold:600; /* @kind font */
+--fw-bold:700; /* @kind font */
+/* Line heights — display is set tight, body is generous and quiet */
+--lh-display:0.88; /* @kind font */
+--lh-display-loose:0.94; /* @kind font */
+--lh-result:1.16; /* @kind font */
+--lh-lead:1.42; /* @kind font */
+--lh-body:1.62; /* @kind font */
+--lh-label:1.1; /* @kind font */
+/* Tracking — negative at display sizes, wide at label sizes */
+--tr-display:-0.045em; /* @kind font */
+--tr-display-2:-0.035em; /* @kind font */
+--tr-result:-0.02em; /* @kind font */
+--tr-body:-0.005em; /* @kind font */
+--tr-label:0.16em; /* @kind font */
+/* Width axis (Archivo variable wdth) */
+--wdth-display:100; /* @kind font */
+--wdth-label:100; /* @kind font */
+/* Measures */
+--measure-body:34ch; /* @kind other */
+--measure-lead:26ch; /* @kind other */
+--measure-result:22ch /* @kind other */
+}
