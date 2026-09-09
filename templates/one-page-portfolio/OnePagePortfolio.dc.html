@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<!-- @template name="One-page portfolio" description="Mobile-first case-study page: swappable intro, 9:16 reel, brief → concept → execution → result." -->
+<helmet><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,75..125,100..900;1,75..125,100..900&display=swap"><script src="./ds-base.js"></script><style>body{margin:0;background:#FAF8F5}*{box-sizing:border-box}img,video{display:block;max-width:100%}a{color:#0E0D0B;text-decoration:none;border-bottom:1px solid rgba(14,13,11,.34)}a:hover{opacity:.62;border-bottom-color:#A16207}::selection{background:#F0E4CE;color:#0E0D0B}</style></helmet>
+<main style="font-family:Archivo,'Helvetica Neue',Helvetica,sans-serif;color:#2A2823;font-size:15px;line-height:1.62;letter-spacing:-.005em;text-wrap:pretty">
+<section style="padding:clamp(72px,14vw,176px) clamp(20px,5.5vw,72px)">
+<div style="max-width:1180px;margin-inline:auto;display:grid;gap:24px">
+<div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;flex-wrap:wrap">
+<p style="margin:0;font-size:11px;font-weight:500;line-height:1.1;letter-spacing:.16em;text-transform:uppercase;color:#2A2823">Bilal Ghazi</p>
+<p style="margin:0;font-size:11px;font-weight:500;line-height:1.1;letter-spacing:.16em;text-transform:uppercase;color:#8E887D">Creative direction &amp; content</p>
+</div>
+<hr style="border:0;border-top:1px solid rgba(14,13,11,.14);margin:0">
+<p style="margin:0;font-size:11px;font-weight:500;line-height:1.1;letter-spacing:.16em;text-transform:uppercase;color:#A16207">For creative &amp; marketing heads</p>
+<p style="margin:0;font-size:clamp(1.75rem,7vw,3.5rem);line-height:.94;letter-spacing:-.035em;font-weight:400;color:#0E0D0B;max-width:24ch">I make campaigns that look like the place they came from.</p>
+<p style="margin:0;font-size:13px;color:#5C574E">Karachi · two minutes of your time · scroll</p>
+</div>
+</section>
+<article>
+<section style="padding:48px clamp(20px,5.5vw,72px)">
+<div style="max-width:1180px;margin-inline:auto;display:grid;gap:24px">
+<div style="display:flex;gap:12px;align-items:baseline;font-size:11px;font-weight:500;line-height:1.1;letter-spacing:.16em;text-transform:uppercase;color:#8E887D"><span style="color:#A16207">01</span><span>Case study</span></div>
+<h2 style="margin:0;font-size:clamp(3.25rem,15.5vw,10rem);font-weight:600;line-height:.88;letter-spacing:-.045em;color:#0E0D0B;text-wrap:balance">Movement × Lyari Drop</h2>
+<dl style="margin:0;max-width:420px">
+<div style="display:grid;grid-template-columns:minmax(88px,26%) 1fr;gap:16px;padding-block:12px;border-top:1px solid rgba(14,13,11,.14)"><dt style="font-size:11px;font-weight:500;line-height:1.1;letter-spacing:.16em;text-transform:uppercase;color:#8E887D;padding-top:3px">Client</dt><dd style="margin:0;font-size:13px;color:#2A2823">Movement</dd></div>
+<div style="display:grid;grid-template-columns:minmax(88px,26%) 1fr;gap:16px;padding-block:12px;border-top:1px solid rgba(14,13,11,.14)"><dt style="font-size:11px;font-weight:500;line-height:1.1;letter-spacing:.16em;text-transform:uppercase;color:#8E887D;padding-top:3px">Role</dt><dd style="margin:0;font-size:13px;color:#2A2823">Concept, direction, edit</dd></div>
+<div style="display:grid;grid-template-columns:minmax(88px,26%) 1fr;gap:16px;padding-block:12px;border-top:1px solid rgba(14,13,11,.14)"><dt style="font-size:11px;font-weight:500;line-height:1.1;letter-spacing:.16em;text-transform:uppercase;color:#8E887D;padding-top:3px">Year</dt><dd style="margin:0;font-size:13px;color:#2A2823">2025</dd></div>
+</dl>
+</div>
+</section>
+<section style="background:#0A0908;padding:48px 0">
+<x-import component-from-global-scope="{{ reelComponent }}" src="{{ reelSrc }}" poster="{{ reelPoster }}" hint-size="100%,520px"></x-import>
+<p style="margin:16px auto 0;padding-inline:clamp(20px,5.5vw,72px);max-width:640px;font-size:13px;line-height:1.4;color:rgba(250,248,245,.62)">The Chaos Tee — ink, records, the mess you still think about.</p>
+</section>
+<section style="padding:48px clamp(20px,5.5vw,72px)">
+<div style="max-width:640px;display:grid;gap:48px">
+<div style="display:grid;gap:12px"><p style="margin:0;font-size:11px;font-weight:500;line-height:1.1;letter-spacing:.16em;text-transform:uppercase;color:#8E887D">Brief</p><p style="margin:0;color:#5C574E;max-width:34ch">Movement wanted a capsule tied to a place rather than a trend, launched with no paid media.</p></div>
+<div style="display:grid;gap:12px"><p style="margin:0;font-size:11px;font-weight:500;line-height:1.1;letter-spacing:.16em;text-transform:uppercase;color:#8E887D">Concept</p><p style="margin:0;color:#5C574E;max-width:34ch">Make it read as Lyari-made, not Lyari-themed. The print is a collage of the neighbourhood — the clock tower, the boxing gym, Kakri Ground — so the garment carries its own location.</p></div>
+<div style="display:grid;gap:12px"><p style="margin:0;font-size:11px;font-weight:500;line-height:1.1;letter-spacing:.16em;text-transform:uppercase;color:#8E887D">Execution</p><p style="margin:0;color:#5C574E;max-width:34ch">Two days on the ground in black and white. Local cast, no studio, no colour grade beyond contrast.</p></div>
+</div>
+</section>
+<section style="padding:8px 0">
+<div style="display:flex;gap:12px;overflow-x:auto;scrollbar-width:none;padding-inline:clamp(20px,5.5vw,72px)">
+<div style="flex:0 0 auto;width:min(62vw,300px);aspect-ratio:4/5;overflow:hidden;background:#E7E3DC"><img src="../../assets/campaign/movement-tee-portrait.png" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
+<div style="flex:0 0 auto;width:min(62vw,300px);aspect-ratio:4/5;overflow:hidden;background:#E7E3DC"><img src="../../assets/campaign/lyari-tee-back.png" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
+<div style="flex:0 0 auto;width:min(62vw,300px);aspect-ratio:4/5;overflow:hidden;background:#E7E3DC"><img src="../../assets/campaign/retrostate-pink-shirt.png" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
+</div>
+</section>
+<section style="padding:48px clamp(20px,5.5vw,72px)">
+<div style="max-width:1180px;margin-inline:auto">
+<div style="border-top:1px solid rgba(14,13,11,.34);padding-top:24px;display:grid;gap:16px">
+<p style="margin:0;font-size:11px;font-weight:500;line-height:1.1;letter-spacing:.16em;text-transform:uppercase;color:#A16207">Result</p>
+<p style="margin:0;font-size:clamp(1.375rem,4.6vw,2.25rem);line-height:1.16;letter-spacing:-.02em;font-weight:500;color:#0E0D0B;max-width:30ch"><span style="color:#A16207">Sold through </span>in nine days, entirely organic.</p>
+</div>
+<hr style="border:0;border-top:1px solid rgba(14,13,11,.14);margin:clamp(72px,14vw,176px) 0 0">
+</div>
+</section>
+</article>
+<section style="padding:clamp(72px,14vw,176px) clamp(20px,5.5vw,72px)">
+<div style="max-width:1180px;margin-inline:auto;display:grid;gap:24px">
+<p style="margin:0;font-size:11px;font-weight:500;line-height:1.1;letter-spacing:.16em;text-transform:uppercase;color:#8E887D">Next</p>
+<p style="margin:0;font-size:clamp(1.75rem,7vw,3.5rem);line-height:.94;letter-spacing:-.035em;font-weight:400;color:#0E0D0B;max-width:22ch">That was two minutes. The rest takes a call.</p>
+<a href="mailto:hello@bilalghazi.com" style="font-size:clamp(1.0625rem,2.6vw,1.375rem);color:#7C4A05;border-bottom-color:#C88A24;justify-self:start">hello@bilalghazi.com</a>
+<div style="display:flex;gap:24px;flex-wrap:wrap;padding-top:12px"><a href="#" style="font-size:13px;color:#5C574E;border:0">Instagram</a><a href="#" style="font-size:13px;color:#5C574E;border:0">Full reel</a><a href="#" style="font-size:13px;color:#5C574E;border:0">PDF</a></div>
+</div>
+</section>
+</main>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;reelSrc&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;../../assets/reels/chaos-tee.mp4&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Hero reel&quot;},&quot;reelPoster&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;../../assets/reels/chaos-tee-poster.png&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Hero reel&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      reelComponent: 'DesignSystem_1d30d0.Reel',
+      reelSrc: this.props.reelSrc ?? '../../assets/reels/chaos-tee.mp4',
+      reelPoster: this.props.reelPoster ?? '../../assets/reels/chaos-tee-poster.png',
+    };
+  }
+}
+</script>
+</body>
+</html>
