@@ -1,0 +1,15 @@
+<!-- @dsCard group="Components" viewport="700x400" name="Case study" subtitle="The fixed order: title → meta → reel → brief/concept/execution → result" -->
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css"><style>body{padding:20px 24px;background:var(--surface-page)}</style>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script></head><body><div id="root"></div>
+<script type="text/babel">const { CaseStudy } = window.DesignSystem_1d30d0;
+ReactDOM.createRoot(document.getElementById('root')).render(<div style={{['--section-y']:'20px',['--gutter']:'0px',['--reel-max-h']:'260px',['--fs-display-2']:'44px'}}>
+  <CaseStudy index="02" size={2} title="Retro State" meta={[{key:'Client',value:'Retro State'},{key:'Role',value:'Concept, direction'},{key:'Year',value:'2025'}]}
+    reel={{src:'../../assets/reels/chaos-tee.mp4',poster:'../../assets/reels/chaos-tee-poster.png',caption:'The Chaos Tee — ink, records, the mess you miss.'}}
+    brief="Relaunch a dormant label with two tees and no media budget."
+    concept="Build each tee around one remembered feeling, then let the object float in an arcade-lit still life."
+    stills={[{src:'../../assets/campaign/gameover-keyart.png'},{src:'../../assets/campaign/retrostate-pink-shirt.png'},{src:'../../assets/campaign/gameover-curtain.png'}]}
+    resultMetric="Sold out" result="in four days, entirely organic." />
+</div>);</script></body></html>
